@@ -2,6 +2,10 @@
 
 `tnsnames` is a small pure-Go parser for Oracle `tnsnames.ora` files.
 
+[![test](https://github.com/CalypsoSys/bob_tnsnames_ora/actions/workflows/test.yml/badge.svg)](https://github.com/CalypsoSys/bob_tnsnames_ora/actions/workflows/test.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/CalypsoSys/bob_tnsnames_ora.svg)](https://pkg.go.dev/github.com/CalypsoSys/bob_tnsnames_ora)
+[![Go Report Card](https://goreportcard.com/badge/github.com/CalypsoSys/bob_tnsnames_ora)](https://goreportcard.com/report/github.com/CalypsoSys/bob_tnsnames_ora)
+
 It parses the balanced-parentheses TNS descriptor format into a tree, supports case-insensitive alias lookup, re-renders canonical descriptor strings, and can derive a simple client connect string for straightforward descriptors that contain `HOST`, `PORT`, and `SERVICE_NAME` or `SID`.
 
 ## Scope

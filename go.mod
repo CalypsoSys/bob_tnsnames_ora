@@ -1,4 +1,4 @@
-module github.com/CalypsoSys/bob_tnsnames_ora
+module github.com/CalypsoSys/babalu_tnsnames_ora
 
 go 1.26
 

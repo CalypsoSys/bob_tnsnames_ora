@@ -1,6 +1,6 @@
-# tnsnames
+# babalu_tnsnames_ora
 
-`tnsnames` is a small pure-Go parser for Oracle `tnsnames.ora` files.
+`babalu_tnsnames_ora` is a small pure-Go parser for Oracle `tnsnames.ora` files.
 
 [![test](https://github.com/CalypsoSys/babalu_tnsnames_ora/actions/workflows/test.yml/badge.svg)](https://github.com/CalypsoSys/babalu_tnsnames_ora/actions/workflows/test.yml)
 [![Go Reference](https://pkg.go.dev/badge/github.com/CalypsoSys/babalu_tnsnames_ora.svg)](https://pkg.go.dev/github.com/CalypsoSys/babalu_tnsnames_ora)
@@ -38,11 +38,11 @@ import (
 	"fmt"
 	"log"
 
-	tnsnames "github.com/CalypsoSys/babalu_tnsnames_ora"
+	"github.com/CalypsoSys/babalu_tnsnames_ora"
 )
 
 func main() {
-	file, err := tnsnames.ParseFile("tnsnames.ora")
+	file, err := babalu_tnsnames_ora.ParseFile("tnsnames.ora")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -66,7 +66,7 @@ func main() {
 ## API Summary
 
 ```go
-file, err := tnsnames.ParseFile("tnsnames.ora")
+file, err := babalu_tnsnames_ora.ParseFile("tnsnames.ora")
 entry, err := file.MustEntry("SALES")
 
 descriptor := entry.Descriptor()

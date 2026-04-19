@@ -1,4 +1,4 @@
-package tnsnames
+package babalu_tnsnames_ora
 
 import (
 	"fmt"
